@@ -129,6 +129,13 @@
                   <br />
                   <p>Удаление удалённой ветки</p>
                   <h2>git push --delete origin (имя ветки)</h2>
+                  <h1>Первоначальная настройка Git</h1>
+                  <p>Установка имени пользователя, от которого будут идти коммиты.</p>
+                  <h2>git config --global user.name «User Name»</h2>
+                  <p>Установка адреса электронной почты. Обратите внимание, что адрес должен совпадать с тем, на который зарегистрирован аккаунт в Гитхабе.</p>
+                  <h2>git config --global user.email mail@gmail.com</h2>
+                  <p>Установка текстового редактора</p>
+                  <h2>git config --global core.editor </h2>
             </div>
           </div>
         </div>
@@ -143,6 +150,7 @@
                 <p>просмотр истории коммитов</p>
             <h2>git log --pretty=format:"%h - %s "</h2>
             <h2>git log --pretty=format:"%h - %s : %ad [ %an ]"</h2>
+            <h2> git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short</h2>
             <br />
             <p>Изменить сообщение коммита:</p>
             <h2>git commit --amend -m "Новое прекрасное сообщение"</h2>
